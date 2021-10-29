@@ -102,23 +102,41 @@
 .txt-1{
     font-family: 'Kanit', sans-serif;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 900;
 }
 .txt-2{
     font-family: 'Kanit', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
-
+.txt-2-2{
+    width: 120px;
+    background: linear-gradient(45deg, rgb(173,52,167), rgb(134,75,176));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block
+  }
 /* @media screen and (max-width:1000px) {
     .box1, .box2, .box3{
         width: 100%;
     }
 } */
 
-.promote{
+/* .promote{
     background-image: url(Story-banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+} */
+.promote{
+    width: 100%;
+    /* height: 50%; */
+    background-image: url(./image/Story-banner.jpg);
+    /* position: absolute; */
+    /* z-index: -100; */
+    background-size: cover;
+    background-position: center;
 }

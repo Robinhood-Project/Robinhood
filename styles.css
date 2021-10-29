@@ -78,6 +78,7 @@
     /* background-size: cover; */
     padding-right: 20px;
     background-size: cover;
+    font-family: 'Kanit', sans-serif;
 }
 
 .box2{
@@ -88,6 +89,7 @@
     /* background-size: cover; */
     padding-right: 20px;
     background-size: cover;
+    font-family: 'Kanit', sans-serif;
 }
 
 .box3{
@@ -97,12 +99,23 @@
     text-align: right;
     /* background-size: cover; */
     padding-right: 20px;
-    background-size: cover;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* @media screen and (max-width: 1000px) {
+    .box1, .box2, .box3{
+        width: 100%;
+    }
+} */
+.hashtag{
+    font-family: 'Kanit', sans-serif;
 }
 .txt-1{
     font-family: 'Kanit', sans-serif;
-    font-size: 24px;
-    font-weight: 900;
+    font-size: 55px;
+    font-weight: bolder;
+    margin-top: 185px;
+    color: rgb(55,55,55);
 }
 .txt-2{
     font-family: 'Kanit', sans-serif;
@@ -110,33 +123,198 @@
     font-weight: bold;
 }
 .txt-2-2{
-    width: 120px;
+    width: 110px;
     background: linear-gradient(45deg, rgb(173,52,167), rgb(134,75,176));
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
-    display: inline-block
+    display: inline-block;
+    font-weight: bold;
   }
-/* @media screen and (max-width:1000px) {
-    .box1, .box2, .box3{
-        width: 100%;
-    }
-} */
-
-/* .promote{
-    background-image: url(Story-banner.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+  .txt-2-3{
+    color: rgb(55,55,55);
+    font-weight: bold;
+  }
+  .txt-3{
+    margin-top: 5px;
+    background: linear-gradient(45deg, rgb(173,52,167), rgb(134,75,176));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+  }
+  .txt-4{
+      color: black;
+      font-weight: 550;
+  }
+  .txt-5{
+    font-family: 'Kanit', sans-serif;
+    margin-top: 5px;
+    background: linear-gradient(45deg, rgb(206,31,159), rgb(181,46,163));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 60px;
+  }
+  .txt-6{
+    font-family: 'Kanit', sans-serif;
+    color: black;
+    font-size: 24px;
+    /* font-weight: bold; */
+}
+.txt-7{
+    font-family: 'Kanit', sans-serif;
+    color: purple;
+    font-weight: bold;
+}
 .promote{
+    padding: 10px;
     width: 100%;
-    /* height: 50%; */
+    height: 75%;
     background-image: url(./image/Story-banner.jpg);
-    /* position: absolute; */
+    position: absolute;
     /* z-index: -100; */
     background-size: cover;
     background-position: center;
+    position: relative;
+    
+}
+
+/* #text{
+    background-color: antiquewhite;
+} */
+
+.hashtag{
+    width: 350px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#youtube{
+    border-radius: 20px;
+}
+
+.highlight{
+    padding: 50px;
+    position: relative;
+}
+
+#story1, #story2, #story3{
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: none;
+    color: black;
+    font-family: 'Kanit', sans-serif;
+}
+
+.txt_hihglight{
+    font-size: 50px;
+    font-weight: 1000;
+}
+
+#img_highlight1{
+    height: 450px;
+    background-image: url(./image/เขียง.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    padding-right: 20px;
+    background-size: cover;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+
+#img_highlight2{
+    height: 450px;
+    background-image: url(./image/มหกรรม-ชานมไข่มุก.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    padding-right: 20px;
+    background-size: cover;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#img_highlight3{
+    height: 450px;
+    background-image: url(./image/รวมร้านอร่อย-วังทอง.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    padding-right: 20px;
+    background-size: cover;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#title{
+    margin: 7px;
+}
+#img_want1{
+    height: 250px;
+    background-image: url(./image/มหกรรม-ชานมไข่มุก2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-size: cover;
+    margin-top:30px;
+    margin-left: auto;
+    border-radius: 15px ;
+}
+#img_want2{
+    height: 250px;
+    background-image: url(./image/สตรีทฟู้ด.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-size: cover;
+    margin-top:30px;
+    margin-left: auto;
+    border-radius:15px ;
+}
+#img_want3{
+    height: 250px;
+    background-image: url(./image/เมซองเดอลาว.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-size: cover;
+    margin-top:30px;
+    margin-left: auto;
+    border-radius:15px ;
+}
+#img_want4{
+    height: 250px;
+    background-image: url(./image/รวมเตี๋ยวร้านเด็ด.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    background-size: cover;
+    margin-top:30px;
+    margin-left: auto;
+    border-radius:15px ;
+}
+
+.download_app{
+    height: 385;
+    background-image: url(./image/Banner-down-app.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.txt_app{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 1000;
 }

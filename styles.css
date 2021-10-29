@@ -115,3 +115,10 @@
         width: 100%;
     }
 } */
+
+.promote{
+    background-image: url(Story-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

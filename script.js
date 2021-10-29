@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (window.scrollY > 200) {
             document.getElementById('navbar_top').classList.add('fixed-top');
+            document.getElementById('navbar_top').style.backgroundColor = "white";
             // add padding top to show content behind navbar
             navbar_height = document.querySelector('.navbar').offsetHeight;
             document.body.style.paddingTop = navbar_height + 'px';
         } else {
             document.getElementById('navbar_top').classList.remove('fixed-top');
+            document.getElementById('navbar_top').style.backgroundColor = "transparent";
             // remove padding top from body
             document.body.style.paddingTop = '0';
         }

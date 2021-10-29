@@ -8,57 +8,73 @@
         crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <link href="styles.css" rel="stylesheet">
     <title>Robinhood</title>
 </head>
 
 <body>
-    <div class="bg-warning py-1">
+    <div class="bg_top">
+        <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
+            <div class="container-fluid" id="nav_top">
+                <a href="#"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="#">รู้จักเรา</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="#">โปรโมชั่น</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="#">กินอะไรดี</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="#">จานเด็ดย่านดัง</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="#">ทิปความรู้</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="#">เรื่องราวร้านอาหาร</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
+                                data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a class="dropdown-item" href="#">สมัครเป็นพาร์ทเนอร์</a></li>
+                                <li><a class="dropdown-item" href="#">คู่มือสำหรับอาหาร</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="#">พาร์ทเนอร์ท่องเที่ยว</a></li>
+                        <li class="nav-item ms-1"><a class="nav-link text-dark" href="#">ไรเดอร์</a></li>
+                        <a class="nav-item ms-1 ps-4 mt-1" href="#"><img src="image/download_App-Store.png"
+                                width="110"></a>
+                        <a class="nav-item ms-1 ps-4 mt-1" href="#"><img src="image/download_Google-Play.png"
+                                width="110"></a>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
         <div class="container">
-            Some top header info for demo
+            <div class="txt-1 row">
+                <h1 class="font-weight-bold">ทางเลือกใหม่
+                    <br>
+                    ฟู้ดเดลิเวอรี่ไทย
+                </h1>
+            </div>
+            <div class="txt-2 row">
+                <div class="col-1 font-weight-bold">Robinhood</div>
+                <div class="col font-weight-bold">รวมจานเด็ดจากร้านเล็กๆ มาไว้ให้คุณแล้ว</div>
+            </div>
         </div>
     </div>
-
     <!-- ============= COMPONENT ============== -->
-    <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark bg-primary">
-        <div class="container">
-            <a href="#"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="main_nav">
 
+    <!-- <div class="container">
+        <div class="div-1">
+        </div>
 
-                <ul class="navbar-nav">
-                    <li class="nav-item ms-1"><a class="nav-link" href="#">รู้จักเรา</a></li>
-                    <li class="nav-item ms-1"><a class="nav-link" href="#">โปรโมชั่น</a></li>
-                    <li class="nav-item ms-1"><a class="nav-link" href="#">กินอะไรดี</a></li>
-                    <li class="nav-item ms-1"><a class="nav-link" href="#">จานเด็ดย่านดัง</a></li>
-                    <li class="nav-item ms-1"><a class="nav-link" href="#">ทิปความรู้</a></li>
-                    <li class="nav-item ms-1"><a class="nav-link" href="#">เรื่องราวร้านอาหาร</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link  dropdown-toggle ms-1" href="#" data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
-                        <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a class="dropdown-item" href="#">สมัครเป็นพาร์ทเนอร์</a></li>
-                            <li><a class="dropdown-item" href="#">คู่มือสำหรับอาหาร</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item ms-1"><a class="nav-link" href="#">พาร์ทเนอร์ท่องเที่ยว</a></li>
-                    <li class="nav-item ms-1"><a class="nav-link" href="#">ไรเดอร์</a></li>
-                    <a class="nav-item ms-1 ps-1 mt-1" href="#"><img src="image/download_App-Store.png" width="100"></a>
-                    <a class="nav-item ms-1 ps-1 mt-1" href="#"><img src="image/download_Google-Play.png" width="100"></a>
-                </ul>
-
-            </div> <!-- navbar-collapse.// -->
-        </div> <!-- container-fluid.// -->
-    </nav>
-    <div class="container">
-
-        <header class="py-4">
-            <h2>Demo page </h2>
-        </header> <!-- section-header.// -->
 
         <section>
             <h6>Demo for navbar or header make fixed after scroll <br> Based on Bootstrap 5 CSS framework. </h6>
@@ -111,13 +127,64 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 
             <a href="http://bootstrap-menu.com/detail-fixed-onscroll.html" class="btn btn-success"> &laquo; Back to
                 tutorial or Download code</a>
             <br><br>
         </section>
+    </div> -->
+
+
+    <div class="container-fluid" id="test">
+        <div class="row">
+            <div class="col  box1">
+                <h3>หาของอร่อย</h3>
+                <p>เรารวบรวมร้านอาหาร</p>
+                <p>เพื่อให้ตอบโจทย์ทุกรูปแบบ</p>
+            </div>
+            <div class="col box2">
+                <h3>พาร์ทเนอร์ร้านอาหาร</h3>
+                <p>สมัครเป็นร้านอาหารในแอป</p>
+                <p>Robinhood Shop สร้างรายได้ได้ทันที</p>
+            </div>
+            <div class="col box3">
+                <h3>ไรเดอร์ส่งอาหาร</h3>
+                <p>สมัครเป็นคนขับส่งอาหาร</p>
+                <p>กับแอป Robinhood</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h5>Robinhood แอปเล็กๆ แต่ตั้งใจทำ</h5>
+                <h2>#เป็นกำลังใจให้ร้านเล็ก</h2>
+                <h1>#แอปเพื่อคนตัวเล็ก</h1>
+            </div>
+            <div class="col">
+                <iframe width="420" height="345" src="https://www.youtube.com/watch?time_continue=237&v=Sjcdffzse_o&feature=emb_logo">
+                </iframe>
+            </div>
+        </div>
     </div>
+
+
+
 </body>
 
 </html>

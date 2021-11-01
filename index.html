@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="script.js"></script>
     <link href="styles.css" rel="stylesheet">
     <title>Robinhood</title>
@@ -45,7 +47,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link  dropdown-toggle ms-1 text-dark" href="#"
                                 data-bs-toggle="dropdown">พาร์ทเนอร์ร้านอาหาร</a>
-                            <ul class="dropdown-menu dropdown-menu-right">
+                            <ul class="dropdown-menu dropdown-menu-right glyphicon glyphicon-menu-down">
                                 <li><a class="dropdown-item" href="merchant.html">สมัครเป็นพาร์ทเนอร์</a></li>
                                 <li><a class="dropdown-item" href="merchantcenter.html">คู่มือสำหรับอาหาร</a></li>
                             </ul>
@@ -80,7 +82,7 @@
 
     <div class="container" id="test">
         <div class="row">
-            <a class="col box1 nav-link" href="#highlight">
+            <a class="col box1 d-inline nav-link" href="#highlight">
                 <div>
                     <h3 class="txt-3 d-flex flex-row-reverse font-weight-bold">หาของอร่อย</h3>
                     <p class="txt-4 d-flex flex-row-reverse ">เรารวบรวมร้านอาหาร</p>
@@ -88,14 +90,14 @@
 
                 </div>
             </a>
-            <a class="col box2 nav-link" href="merchant.html">
+            <a class="col box2 d-inline nav-link" href="merchant.html">
                 <div>
                     <h3 class="txt-3 d-flex flex-row-reverse font-weight-bold">พาร์ทเนอร์ร้านอาหาร</h3>
                     <p class="txt-4 d-flex flex-row-reverse">สมัครเป็นร้านอาหารในแอป</p>
                     <p class="txt-4 d-flex flex-row-reverse">Robinhood Shop สร้างรายได้ได้ทันที</p>
                 </div>
             </a>
-            <a class="col box3 nav-link" href="rider.html">
+            <a class="col box3 d-inline nav-link" href="rider.html">
                 <div>
                     <h3 class="txt-3 d-flex flex-row-reverse font-weight-bold">ไรเดอร์ส่งอาหาร</h3>
                     <p class="txt-4 d-flex flex-row-reverse">สมัครเป็นคนขับส่งอาหาร</p>
@@ -106,19 +108,21 @@
     </div>
 
     <div class="promote">
-        <div class="row container">
-            <div class="col-6 mt-4 text-light" id="text">
-                <div class="hashtag mt-5">
-                    <h5 class="row-12 font-weight-bold">Robinhood แอปเล็กๆ แต่ตั้งใจทำ</h5>
-                    <h2 class="row-12 font-weight-bold">#เป็นกำลังใจให้ร้านเล็ก</h2>
-                    <h1 class="row-12 font-weight-bold">#แอปเพื่อคนตัวเล็ก</h1>
+        <div class="container">
+            <div class="row p-3">
+                <div class="col text-light mt-5" id="text">
+                    <div class="hashtag mt-5">
+                        <h5 class="row font-weight-bold">Robinhood แอปเล็กๆ แต่ตั้งใจทำ</h5>
+                        <h2 class="row font-weight-bold">#เป็นกำลังใจให้ร้านเล็ก</h2>
+                        <h1 class="row font-weight-bold">#แอปเพื่อคนตัวเล็ก</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 mt-5">
-                <!-- ?autoplay=1&mute=1 ใส่หลังlink youtube เพื่อให้เล่นอัตโนมัต-->
-                <iframe class="col ml-3" id="youtube" width="580" height="315"
-                    src="https://www.youtube.com/embed/Sjcdffzse_o" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                <div class="col video" id="video">
+                    <!-- ?autoplay=1&mute=1 ใส่หลังlink youtube เพื่อให้เล่นอัตโนมัต-->
+                    <iframe class="col m-3" id="youtube" width="660" height="315"
+                        src="https://www.youtube.com/embed/Sjcdffzse_o" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -152,7 +156,7 @@
             <div class="row txt-5 font-weight-bold my-4">
                 <h1 class="txt_hihglight">อยากกินแบบไหน? Robinhood ก็จัดให้</h1>
             </div>
-            <div class="row txt-6 font-weight-normal">เรารวบรวมร้าน Playlist
+            <div class="row txt-6 font-weight-normal ml-1">เรารวบรวมร้าน Playlist
                 ร้านอาหารเพื่อให้ตอบโจทย์ทุกรูปแบบการกิน
                 มื้อนี้อยากทานแบบไหนเลือกได้เลย!</div>
             <div class="row">
@@ -173,31 +177,167 @@
     </div>
     <div class="more">
         <ul class="navbar-nav">
-            <li class="text-center mt-4 my-4"><a class="txt-7" href="food-playlist.html">เพิ่มเติม</a></li>
+            <li class="text-center mt-4 my-4"><a class="txt-7" href="food-playlist.html"><u>เพิ่มเติม</u></a></li>
         </ul>
+
     </div>
 
     <div class="download_app">
         <div class="container">
             <div class="row">
-                <h4 class="txt_app">สั่งง่ายๆ ได้ทุกที่ผ่าน Robinhood</h4>
-                <h1 class="txt_app">เริ่มมื้ออร่อยกับ Robinhood</h1>
+                <h4 class="row txt_app_1 text-white font-weight-bold">สั่งง่ายๆ ได้ทุกที่ผ่าน Robinhood</h4>
+                <a class="row txt_app_2 text-white font-weight-bold">เริ่มมื้ออร่อยกับ Robinhood</a>
             </div>
-            <div class="row">
-                <div class="col-3">
-                    <a class="row nav-link" id="app_store" href="#highlight">
-                        <img src="./image/download_App-Store.png" style="width:200px;">
+            <div class="row mt-5">
+                <div class="row">
+                    <a class="col-2 nav-link" id="app_store" href="#highlight">
+                        <img class="" src="./image/download_App-Store.png" style="width:150px;">
+                    </a>
+                    <a class="col-2 nav-link" id="google_play" href="#highlight">
+                        <img src="./image/download_Google-Play.png" style="width:150px;">
                     </a>
                 </div>
-                <div class="col-3">
+                <!-- <div class="col-3">
                     <a class="row nav-link" id="google_play" href="#highlight">
                         <img src="./image/download_Google-Play.png" style="width:200px;">
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="eat1dish">
+        <div class="container">
+            <div class="row txt-5 font-weight-bold my-4">
+                <h1 class="txt_hihglight">อาหาร 1 จานมีเรื่องราวมากมายซ่อนอยู่</h1>
+            </div>
+            <div class="row txt-6 font-weight-normal ml-1">เรื่องราวของร้านอาหาร กว่าจะเป็นร้านอร่อยที่เรารู้จัก
+                เราจะพาคุณไปรู้จักให้มากขึ้น
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <a class="nav-link" href="#highlight">
+                        <img class="row img-eat" src="./image/Thumbnail-Cover-1.jpg" alt="..." class="img-thumbnail">
+                        <p class="row txt-8 font-weight-bold mt-2">50 ปีแห่งความอร่อย เจ๊กีโปโล
+                            ไก่ทอดระดับตำนานกับหลากหลายเมนูอีสานสุดแซ่บ</p>
+                    </a>
+                    <div class="row">
+                        <a class="col-4 nav-link txt-2-2 " href="#highlight"><img class="ml-5"
+                                src="./image/Group-1115-e1599403771374.png" width="22%">&emsp;Robinhood</a>
+                        <a class="col-4 nav-link mt-2 txt-9 text-secondary" href="#highlight">|&emsp;<i
+                                class="far fa-calendar-alt text-secondary" style="font-size:16px"></i> ตุลาคม 22,
+                            2020&emsp;|</a>
+                    </div>
+                </div>
+                <div class="col-4 ">
+                    <div class="row">
+                        <a class="nav-link" href="#highlight">
+                            <img class="row img-eat-1" src="./image/สมบูรณ์โภชนา-Thumbnail-Cover.jpg" alt="..."
+                                class="img-thumbnail">
+                            <p class="row txt-8 font-weight-bold mt-2">สมบูรณ์โภชนา
+                                ต้นตำรับปูผัดผงกะหรี่ที่หนึ่งของเอเชีย​</p>
+                        </a>
+                        <a class="row nav-link txt-2-2 " href="#highlight">Robinhood</a>
+                    </div>
+                    <div class="row">
+                        <a class="nav-link" href="#highlight">
+                            <img class="row img-eat-1" src="./image/รสดีเด็ด-Thumbnail.jpg" alt="..."
+                                class="img-thumbnail">
+                            <p class="row txt-8 font-weight-bold mt-2">รสดีเด็ด บ้านคุณนพ รวมยอดเมนูสุดปังของคนรักเนื้อ​
+                            </p>
+                        </a>
+                        <a class="row nav-link txt-2-2 " href="#highlight">Robinhood</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="more my-4">
+            <ul class="navbar-nav">
+                <li class="text-center mt-4 my-4"><a class="txt-7" href="food-playlist.html"><u>เพิ่มเติม</u></a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!--เหลือทำเวลาเลื่อนมาถึงอันนี้แล้วข้อความค่อยๆปรากฏให้เห็น-->
+    <div class="poppular_restaurant">
+        <div class="container">
+            <div class="text_popular">
+                <h1 class="text_pop_top mb-5 font-weight-bold"><b>รวมร้านเด็ดย่านดัง</b></h1>
+                <p class="text_pop font-weight-bold">แอป Robinhood ได้รวบรวมร้านเด็ด ทุกย่านดัง</p>
+                <p class="text_pop mb-5 font-weight-bold">ที่เราคัดสรรมาเป็นอย่างดีจากทั่วกรุงเทพฯ มาให้คุณแล้ว</p>
+                <div class="link_restaurant mt-5">
+                    <a class="text_link_restaurant" href="http://www.doesystem.com/51/HTML/1.html">
+                        <h3><b>เลือกร้านอร่อยตามย่าน</b></h3>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-
-    
+    <div class="TipsandKnowledge">
+        <div class="container mt-4">
+            <div class="row txt-5 font-weight-bold my-4 ">
+                <h1 class="txt_hihglight ">Tips and Knowledge</h1>
+            </div>
+            <div class="row txt-6 font-weight-normal ml-1">
+                รอบรู้เรื่องอาหาร หลากหลายข้อสงสัย หาคำตอบได้ที่นี่
+            </div>
+            <div class="row">
+                <a class="col-4 nav-link" href="#highlight">
+                    <div class="card" style="width: 23rem;">
+                        <img class="card-img-top img-tip" src="./image/why-food-delivery-thumbnail-cover-edit.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="row txt-10 font-weight-bold mt-1">5 เหตุผลที่การสั่งอาหารเดลิเวอรี่​เป็นที่นิยม
+                            </p>
+                            <p class="row txt-11 font-weight-normal">การสั่งเดลิเวอรี่
+                                กลายเป็นเรื่องปกติใหม่ของผู้บริโภคไปแล้ว ยิ่งในช่วงที่เกิดวิกฤตโควิด-19
+                                ยิ่งเร่งให้ทั้งผู้ขาย และผู้ซื้อ เข้ามาพึ่งช่องทางออนไลน์ …</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="col-4 nav-link" href="#highlight">
+                    <div class="card" style="width: 23rem;">
+                        <img class="card-img-top img-tip"  src="./image/Donburi-Thumbnail-Cover-edit.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="row txt-10 font-weight-bold mt-1">“ดงบุริ” อาหารมื้อง่ายๆ ทั้งอร่อยและมีประโยชน์ ​
+                            </p>
+                            <p class="row txt-11 font-weight-normal">เที่ยงนี้กินอะไรดี? คำถามง่ายๆ แต่หลายครั้งก็ทำเอาผู้ตอบต้องคิดหนัก ลองเปลี่ยนมื้อจำเจมาเป็น “ดงบุริ” อาหารจานเดียวในสไตล์ญี่ปุ่นแบบอิ่มกำลังดี …</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="col-4 nav-link" href="#highlight">
+                    <div class="card" style="width: 23rem;">
+                        <img class="card-img-top img-tip" src="./image/Cheese-Thumbnail-Cover-edit.jpg"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="row txt-10 font-weight-bold mt-1">ชีสเลิฟเวอร์ต้องรู้! มีกี่ชนิด & กินยังไงให้อร่อยถูกใจ
+                            </p>
+                            <p class="row txt-11 font-weight-normal">เมื่อพูดถึงชีสคนที่เป็นชีสเลิฟเวอร์ตัวจริงเสียงจริงต้องร้องว้าวถึงความอร่อย แม้ว่าชีสให้พลังงานสูงปี๊ดแต่หลายคนก็อดใจไม่ได้ที่จะต้องขอลองชิม …</p>
+                        </div>
+                    </div>
+                </a>
+            
+            </div>
+            <div class="more my-4">
+                <ul class="navbar-nav">
+                    <li class="text-center mt-4 my-4"><a class="txt-7" href="food-playlist.html"><u>เพิ่มเติม</u></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="order_with_robinhood">
+        <div class="container">
+            <br>
+            <div class="row font-weight-bold my-4 mt-5">
+                <p class="text-center txt-12">เริ่มต้นสั่งอาหารกับ Robinhood</p>
+            </div>
+            <div class="row">
+                
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

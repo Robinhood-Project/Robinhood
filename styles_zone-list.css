@@ -75,3 +75,96 @@
     font-size: 1.4em;
     font-weight: bold;
 }
+.txt3{
+    font-size: 2.8em;
+}
+#img_zone1{
+    height: 458px;
+    width: 102.5%;
+    background-image: url(./image/RBH-Nonthaburi_Highlight-Banner-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+#img_zone2{
+    height: 220px;
+    background-image: url(./image/1700x960.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    
+}
+#img_zone3{
+    height: 220px;
+    background-image: url(./image/บางรัก_Second-Hightlight-Thumbnail.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;    
+}
+#img_zone4{
+    height: 260px;
+    width: 106%;
+    background-image: url(./image/บางรัก_Second-Hightlight-Thumbnail.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: -17px;    
+}
+#img_zone5{
+    height: 260px;
+    width: 106%;
+    background-image: url(./image/บางรัก_Second-Hightlight-Thumbnail.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: -17px;    
+}
+#img_zone6{
+    height: 260px;
+    width: 106%;
+    background-image: url(./image/บางรัก_Second-Hightlight-Thumbnail.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+    margin-top: -17px;      
+}
+#img_zone7{
+    height: 260px;
+    width: 106%;
+    background-image: url(./image/บางรัก_Second-Hightlight-Thumbnail.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2); 
+    margin-top: -17px;    
+}
+.button{
+    color: rgb(255, 255, 255);
+    background-color: blueviolet;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    font-family: 'Kanit', sans-serif;
+}

@@ -1,6 +1,6 @@
 .bg_top{
     width: 100%;
-    height: 640px;
+    height: 850px;
     background-image: url(./image/Banner_AboutUs_V17.png);
     /* position: absolute; */
     z-index: -100;
@@ -50,3 +50,31 @@
 .nav-item{
     font-size: 14px;
 }
+.txt-1-2{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+.txt-1-2-1{
+    font-family: 'Kanit', sans-serif;
+    font-weight: bolder;
+    color: rgb(134, 40, 138);
+    margin-right: 10px;
+}
+.txt-1-3{
+    color: rgb(255, 255, 255);
+    font-size:18px;
+    line-height: 25pt;
+}
+.txt-1-4{
+    color:black;
+    font-size:18px;
+    line-height: 25pt;
+}
+.txt_about{
+    color: rgb(255, 255, 255);
+    font-size:23px;
+    line-height: 20pt;
+}
+

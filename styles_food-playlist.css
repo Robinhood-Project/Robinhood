@@ -60,49 +60,54 @@
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
     margin-top: 15px;    
 }
-#img-food4{
+.box-img{
     height: 260px;
     width: 106%;
-    background-image: url(./image/มหกรรม-ชานมไข่มุก2.png);
     background-position: center;
     background-repeat: no-repeat;
     text-align: right;
     background-size: cover;
     border-radius: 10px;
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#img-food4{
+    background-image: url(./image/มหกรรม-ชานมไข่มุก2.png);
 }
 #img-food5{
-    height: 260px;
-    width: 106%;
     background-image: url(./image/Seafood272x272.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: right;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
 }
 #img-food6{
-    height: 260px;
-    width: 106%;
     background-image: url(./image/Sugar272x272.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: right;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
 }
 #img-food7{
-    height: 260px;
-    width: 106%;
     background-image: url(./image/Morning272x272.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: right;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2); 
+}
+#img-food8{
+    background-image: url(./image/ร้านโปรด.png);
+}
+#img-food9{
+    background-image: url(./image/ไชน่าทาวน์.png);
+}
+#img-food10{
+    background-image: url(./image/รวมร้านอร่อยในโรงแรม.png);
+}
+#img-food11{
+    background-image: url(./image/ร้านปิดดึก.png);
+}
+#img-food12{
+    background-image: url(./image/สุโก้ยเจแปน.png);
+}
+#img-food13{
+    background-image: url(./image/เฮลตี้าสุดซอย.png);
+}
+#img-food14{
+    background-image: url(./image/สตรีทฟู้ดดี้.png);
+}
+#img-food15{
+    background-image: url(./image/เมซองเดอลาว.png);
+}
+#img-food16{
+    background-image: url(./image/รวมเตี๋ยวร้านเด็ด.png);
 }
 .button{
     height: 40px;

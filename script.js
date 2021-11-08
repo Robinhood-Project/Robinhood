@@ -16,3 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+function submitButtonStyle() { 
+    document.getElementsByClassName("txt-circle")[0].style.backgroundImage = "linear-gradient(to right, #c9249f, #8949ad)";
+    document.getElementsByClassName("txt-circle")[0].style.color = "white"; }

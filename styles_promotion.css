@@ -73,3 +73,14 @@
     border-radius: 10px;
     box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2); 
 }
+#img_promo6{
+    height: 450px;
+    width:106.5%;
+    background-image: url(./image/promotion_เพิ่ม.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: right;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2); 
+}

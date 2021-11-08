@@ -16,13 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
     <script src="script.js"></script>
-    <link href="styles_zone-list.css" rel="stylesheet">
-    <title>จานเด็ดย่านดัง</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles_zone-list.css">
+    <title>จานเด็ดย่านดัง - Robinhood</title>
 </head>
 
 <body>
     <div class="bg_top">
-        <!-- Navbar -->
         <nav id="navbar_top" class="navbar navbar-expand-xl navbar-dark">
             <div class="container-fluid" id="nav_top">
                 <a href="index.html"><img src="image/RBH_MAIN_LOGO.png" width="60"></a>
@@ -62,47 +62,89 @@
                 </div> <!-- navbar-collapse.// -->
             </div> <!-- container-fluid.// -->
         </nav>
-        <!-- End Navbar -->
-        <div class="container" id="txt_top">
-            <div class="txt-1 row">
-                <h2 class="txt1">ไม่ว่าจะอยู่แถวไหนก็มีของอร่อย</h2>
-            </div>
-            <div class="txt-2 row">
-                <p class="txt2">
-                    <hightlight class="text_highlight">Robinhood </hightlight>ได้รวบรวมร้านเด็ด
-                    ทุกย่านดัง<br>ที่เราคัดสรรมาเป็นอย่างดีจากทั่วกรุงเทพฯ มาให้คุณแล้ว
-                </p>
+        <div class="container">
+            <div class="txt-1-1 row">
+                <a class="col-9 font-weight-bold">ไม่ว่าจะอยู่แถวไหนก็มีแต่ของอร่อย
+                </a>
+                <a class="col-7 txt-1-2 font-weight-bold"><span class="color-robinhood txt-1-2">Robinhood
+                    </span>ได้รวบรวมร้านเด็ด ทุกย่านดัง</a>
+                <a class="col-7 txt-1-2 font-weight-bold">ที่เราคัดสรรมาเป็นอย่างดีจากทั่วกรุงเทพฯ มาให้คุณแล้ว
+                </a>
             </div>
         </div>
-
     </div>
-    <div class="container">
-        <div class="txt-3 my-5 py-3">
-            <h1 class="txt3">
-                <hightlight class="text_highlight">ย่านดังที่เราอยากให้คุณได้ลอง</hightlight>
-            </h1>
+
+    <div class="food_zone" id="food_zone">
+        <div class="container">
             <div class="row">
-                <a class="col-8 nav-link py-4" id="zone1">
-                    <div class="row" id="img_zone1"></div>
-                </a>
-                <a class="col-4 nav-link py-4" id="zone2">
-                    <div class="row" id="img_zone2"></div>
-                    <div class="row" id="img_zone3"></div>
-                </a>
-                <a class="col-3 nav-link" id="zone4">
-                    <div class="row" id="img_zone4"></div>
-                </a>
-                <a class="col-3 nav-link" id="zone5">
-                    <div class="row" id="img_zone5"></div>
-                </a>
-                <a class="col-3 nav-link" id="zone6">
-                    <div class="row" id="img_zone6"></div>
-                </a>
-                <a class="col-3 nav-link" id="zone7">
-                    <div class="row" id="img_zone7"></div>
+                <div class="row txt-5 mt-5 my-4">
+                    <h1 class="txt_food">ย่านดังที่เราอยากให้คุณได้ลอง</h1>
+                </div>
+                <div class="row playlist">
+                    <a class="col-8 nav-link" href="">
+                        <div class="row" id="img-zone1"></div>
+                    </a>
+                    <a class="col-4 nav-link" href="">
+                        <div class="row" id="img-zone2"></div>
+                        <div class="row" id="img-zone3"></div>
+                    </a>
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone4"></div>
+                    </a>
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone5"></div>
+                    </a>
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone6"></div>
+                    </a>
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone7"></div>
+                    </a>
+                </div>
             </div>
-            <div class="row my-4" id="button">
-                <input class="button" type="button" value="ย่านเพิ่มเติม">
+        </div>
+    </div>
+    <div class="row my-4" id="button">
+        <div class="col-5"></div>
+        <div class="col-3">
+            <button class="button" type="button" id="list" onclick="list()" data-toggle="collapse"
+                data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                ย่านเพิ่มเติม</button>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    <script>
+        function list() {
+            document.getElementById("list").style.display = "none";
+            document.getElementById("food_zone").style.marginBottom = "-48px";
+        }
+    </script>
+    <div class="collapse" id="collapseExample">
+        <div class="container">
+            <div class="row">
+                <div class="row playlist">
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone8"></div>
+                    </a>
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone9"></div>
+                    </a>
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone10"></div>
+                    </a>
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone11"></div>
+                    </a>
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone12"></div>
+                    </a>
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone13"></div>
+                    </a>
+                    <a class="col-3 nav-link" href="">
+                        <div class="row box-img" id="img-zone14"></div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

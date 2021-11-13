@@ -5,137 +5,20 @@ document.addEventListener("DOMContentLoaded", function () {
         if (window.scrollY > 200) {
             document.getElementById('navbar_top').classList.add('fixed-top');
             document.getElementById('navbar_top').style.backgroundColor = "white";
+            document.getElementsByTagName('li').style.color = "black";
+            document.getElementById("navbar_top").src = "image/RBH_MAIN_LOGO.png";
             // add padding top to show content behind navbar
             navbar_height = document.querySelector('.navbar').offsetHeight;
             document.body.style.paddingTop = navbar_height + 'px';
         } else {
             document.getElementById('navbar_top').classList.remove('fixed-top');
             document.getElementById('navbar_top').style.backgroundColor = "transparent";
+            document.getElementById('navbar_top').src = "image/RBH_MAIN_LOGO.png";
             // remove padding top from body
             document.body.style.paddingTop = '0';
         }
     });
 });
-function one() {
-    document.getElementsByClassName("button1")[0].style.backgroundImage = "linear-gradient(to right, #c9249f, #8949ad)";
-    document.getElementsByClassName("button1")[0].style.color = "white";
-    document.getElementsByClassName("button2")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button2")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button3")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button3")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button4")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button4")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button5")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button5")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button6")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button6")[0].style.color = "rgb(168,9,124)";
-    document.getElementById('myimage').src = "./image/mobile_b1-choose.png";
-    // document.getElementById('message')
-    // .innerHTML="Hii! GeeksforGeeks people";
-}
-function two() {
-    document.getElementsByClassName("button2")[0].style.backgroundImage = "linear-gradient(to right, #c9249f, #8949ad)";
-    document.getElementsByClassName("button2")[0].style.color = "white";
-    document.getElementsByClassName("button1")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button1")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button3")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button3")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button4")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button4")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button5")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button5")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button6")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button6")[0].style.color = "rgb(168,9,124)";
-    document.getElementById('myimage').src = "./image/Mobile_B2-Select-Restuarant-v2.png";
-
-    // document.getElementById('message')
-    // .innerHTML="Hii! GeeksforGeeks people";
-}
-function three() {
-    document.getElementsByClassName("button3")[0].style.backgroundImage = "linear-gradient(to right, #c9249f, #8949ad)";
-    document.getElementsByClassName("button3")[0].style.color = "white";
-    document.getElementsByClassName("button1")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button1")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button2")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button2")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button4")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button4")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button5")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button5")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button6")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button6")[0].style.color = "rgb(168,9,124)";
-    document.getElementById('myimage').src = "./image/Mobile_B3-Select-Menu-with-Mobile-V2.png";
-
-    // document.getElementById('message')
-    // .innerHTML="Hii! GeeksforGeeks people";
-}
-function four() {
-    document.getElementsByClassName("button4")[0].style.backgroundImage = "linear-gradient(to right, #c9249f, #8949ad)";
-    document.getElementsByClassName("button4")[0].style.color = "white";
-    document.getElementsByClassName("button1")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button1")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button3")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button3")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button2")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button2")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button5")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button5")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button6")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button6")[0].style.color = "rgb(168,9,124)";
-    document.getElementById('myimage').src = "./image/Mobile_B4-Payment-Method.png";
-
-    // document.getElementById('message')
-    // .innerHTML="Hii! GeeksforGeeks people";
-}
-function five() {
-    document.getElementsByClassName("button5")[0].style.backgroundImage = "linear-gradient(to right, #c9249f, #8949ad)";
-    document.getElementsByClassName("button5")[0].style.color = "white";
-    document.getElementsByClassName("button1")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button1")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button3")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button3")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button4")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button4")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button2")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button2")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button6")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button6")[0].style.color = "rgb(168,9,124)";
-    document.getElementById('myimage').src = "./image/Mobile_B5-Paid-with-mobile-v2.png";
-
-    // document.getElementById('message')
-    // .innerHTML="Hii! GeeksforGeeks people";
-}
-function six() {
-    document.getElementsByClassName("button6")[0].style.backgroundImage = "linear-gradient(to right, #c9249f, #8949ad)";
-    document.getElementsByClassName("button6")[0].style.color = "white";
-    document.getElementsByClassName("button1")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button1")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button3")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button3")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button4")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button4")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button5")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button5")[0].style.color = "rgb(168,9,124)";
-    document.getElementsByClassName("button2")[0].style.backgroundImage = "none";
-    document.getElementsByClassName("button2")[0].style.color = "rgb(168,9,124)";
-    document.getElementById('myimage').src = "./image/Mobile_B6-Deliver-Tracking.png";
-
-    // document.getElementById('message')
-    // .innerHTML="Hii! GeeksforGeeks people";
-}
-// $("#toggle").on("click", function(){
-//     $("#content").toggleClass("show");
-//   });
-// document.addEventListener('change', function(e) {
-//     var id = e.target.getAttribute('data-info-id');
-//     var checked = e.target.checked;
-//     if (id) {
-//       var div = document.getElementById(id);
-//       if (div)
-//         div.style.display = checked ? 'block' : 'none';
-//     }
-
-//   });
 $(document).ready(function () {
     $("#flip").click(function () {
         $("#panel").slideToggle("slow");

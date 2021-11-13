@@ -2,20 +2,29 @@
     font-family: 'Kanit', sans-serif;
 }
 
+.bg{
+    position: relative;
+}
 .bg_top{
     width: 100%;
-    height: 640px;
-    background-image: url(./image/);
+    /* height: 39.5%; */
+    height: 163%;
+    background-image: url(./image/หน้าปกสมัครพาร์ทเนอร์1.jpg);
     /* position: absolute; */
     z-index: -100;
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover; */
+    /* background-position: left; */
+    flex-wrap: wrap;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    
 }
 
 #nav_top{
     padding-top: 20px;
     font-family: 'Kanit', sans-serif;
     font-weight:bold;
+    
 }
 
 .fixed-top {
@@ -34,7 +43,7 @@
 }
 
 .dropdown-content a {
-    color: black;
+    color: rgb(0, 0, 0);
     /* padding: 12px 16px; */
     text-decoration: none;
     display: block;
@@ -49,25 +58,187 @@
 }
 
 .dropdown:hover .dropdown-toggle {
-    background-color: none
+    background-color: none;
 }
 .nav-item{
     font-size: 14px;
 }
 
 #text{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 100%;
 
 }
-
-#textbuttext{
+.nav-item{
+    color: white;
+}
+.nav_link{
+    color: white;
+}
+.txt-1-1{
+    /* width: 150px; */
+    background: linear-gradient(45deg, rgb(218,125,58), rgb(125,105,50));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+}
+.button{
+    height: 40px;
+    width: 135px;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 20px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+.two{
+    padding: 10px;
+    max-width: 100%;
+    /* height: 75%; */
+    /* background-image: url(./image/Mask-Group.png); */
+    position: absolute;
+    /* z-index: -100; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bg_robin{
+    width: 80%;
+    max-width: 100%;
+    
+    background-image: url(./image/Mask-Group.png);
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    /* background-position: center; */
+    background-color: transparent;
+    opacity: 1;
+    filter: alpha(opacity=40);
+}
+#Robinhood_Shop{
+    height: 100%;
+    background-image: linear-gradient(rgb(89,48,134), rgb(174,50,141));
+}
+#Robinhood_Shop_2{
+    height: 100%;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+}
+.button2{
+    height: 55px;
+    width: 60%;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+#book{
+    height: 75%;
+    width: 85%;
+    background: white;
+    border-radius: 8px;
+    padding: 2px;
+}
+#five{
+    background-color: rgb(236, 236, 236);
+}
+#bg-six{
+    /* padding: 10px; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* height: 75%; */
+    background-image: url(./image/Frame-6-crop.jpg);
+    position: absolute;
+    /* z-index: -100; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#txt-2-2{
+    
+    background: linear-gradient(45deg, rgb(204,33,159), rgb(134,75,176));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 45px;
+}
+#txt-2-2-2{
+    font-size: 24px;
+}
+#bg-seven{
+    /* padding: 10px; */
+    /* width: 100%; */
+    /* height: 100%; */
+    /* height: 75%; */
+    background-image: url(./image/Frame-884-e1597331443973.png);
+    position: absolute;
+    /* z-index: -100; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#txt-3-3-3{
+    background: linear-gradient(45deg, rgb(204,33,159), rgb(134,75,176));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 45px;
+}
+.price{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.button3{
+    height: 55px;
+    width: 35%;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+#bg-nine{
+    /* padding: 10px; */
+    /* width: 100%; */
+    /* height: 100%;
+    height: 100%; */
+    background-image: url(./image/แผนที่.jpg);
+    position: absolute;
+    /* z-index: -100; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+/* #textbuttext{
     background-color: rgb(230, 31, 31);
     width: 100%;
     height: 100%;
-}
+} */
 
-.one{
-    
-}
+/* .one{
+    z-index: -100;
+} */

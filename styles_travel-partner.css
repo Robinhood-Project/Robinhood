@@ -1,0 +1,304 @@
+.bg{
+    position: relative;
+}
+.bg_top{
+    width: 100%;
+    /* height: 39.5%; */
+    height: 480px;
+    background-image: url("https://www.youtube.com/embed/ZzQaXvETmfs");
+    /* position: absolute; */
+    z-index: -100;
+    background-size: cover;
+    background-position: center;
+}
+iframe{
+    position: absolute;
+    border-radius: 0;
+}
+/* video {
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  } */
+#youtube2-1{
+    width: 1120px;
+    height: 600px;
+    border-radius: 30px;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: absolute;
+    background-size: cover;
+    background-position: center; */
+}
+#youtube2-2{
+    width: 1120px;
+    height: 600px;
+    border-radius: 30px;
+    display: none;
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: absolute;
+    background-size: cover;
+    background-position: center; */
+}
+
+.somerow{
+    width: 1120px;
+    height: 600px;
+    position: relative;
+}
+.txt-1-1{
+    margin-top: 80px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(53, 52, 52);
+}
+.txt-1-1-1{
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.txt-1-2{
+    margin-top: -15px;
+    font-family: 'Kanit', sans-serif;
+    /* margin-top: 10px; */
+    font-size: 60px;
+}
+.txt-1-3{
+    margin-top: 75px;
+    font-size: 23px;
+}
+.txt-1-3-1{
+    line-height: 1.25;
+}
+.txt-1-3-2{
+    margin-top: 0px;
+}
+.txt-1-3-3{
+    font-size: 23px;
+}
+.txt-1-3-4{
+    font-size: 20px;
+}
+.txt-1-4{
+    margin-top: 225px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.txt-1-5{
+    margin-top: 80px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(53, 52, 52);
+}
+#txt-register1, #txt-register2{
+    font-size: 33px;
+}
+.text-size{
+    margin-top: -30px;
+    font-size: 18px;
+}
+.sign-up{
+    margin-top: 30px;
+    width: 150px;
+    height: 55px;
+    font-size: 23px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+}
+.sign-up:hover{
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+.color-robinhood{
+    font-weight: bold;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.travel-partner{
+    margin-top: 100px;
+    position: relative;
+}
+.box-img-act{
+    width: 20%;
+    height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+#activity{
+    width: 100vw;
+}
+#img-activity1{
+    background-image: url(./image/ที่พัก.jpg);
+}
+#img-activity1:hover{
+    width: 50%; 
+    
+}
+#img-activity2{
+    background-image: url(./image/เครื่องบิน.jpg);
+}
+#img-activity2:hover{
+    width: 50%;
+    
+}
+#img-activity3{
+    background-image: url(./image/ทัวร์กิจกรรม.jpg);
+}
+#img-activity3:hover{
+    width: 50%;
+    
+}
+#img-activity4{
+    background-image: url(./image/เช่ารถ.jpg);
+}
+#img-activity4:hover{
+    width: 50%;
+    
+}
+#img-activity5{
+    background-image: url(./image/ประกัน.jpg);
+}
+#img-activity5:hover{
+    width: 50%;
+}
+.box-img{
+    width: 235px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: cover;
+}
+#img-advantage1{
+    background-image: url(./image/ลูกค้าบนแอป.png);
+}
+#img-advantage2{
+    background-image: url(./image/คอมมิชชั่น.png);
+}
+#img-advantage3{
+    background-image: url(./image/ช่องทางการเพิ่มยอดขาย.png);
+}
+#img-advantage4{
+    background-image: url(./image/โอนเงินเข้ารวดเร็ว.png);
+}
+#img-advantage5{
+    background-image: url(./image/ช่วยเหลือด้านการตลาด.png);
+}
+#img-advantage6{
+    background-image: url(./image/จัดการแพ็กเกจ.png);
+}
+#img-advantage7{
+    background-image: url(./image/บริการบริหารเงิน.png);
+}
+#img-advantage8{
+    background-image: url(./image/บริการช่วยเหลือตลอด24ชม.png);
+}
+#img-advantage9{
+    background-image: url(./image/บริการหักภาษี.png);
+}
+#img-arrow{
+    margin-left: 290px;
+    width: 570px;
+    height: 55px;
+    background-image: url(./image/cap1.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+.imagetest{
+    /* margin-left: 290px; */
+}
+.button1{
+    margin-top: -30px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    pointer-events: none;
+    border-radius: 50%;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    border: none;
+}
+.button2{
+    margin-top: -30px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    pointer-events: none;
+    border-radius: 50%;
+    border-color: #c428a0;
+}
+.prepare{
+    margin-top: 150px;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    background-color: #fafafa;
+}
+.join_partner{
+    padding-top: 50px;
+    width: 100%;
+    height: 595px;
+    background-image: url(./image/ร่วมเป็นพาร์ทเนอร์.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* .how_to_register{
+    width: 1120px;
+    height: 600px;
+    position: relative;
+} */
+
+/* #panel, #flip, #panel2, #flip2, #panel3, #flip3, #panel4, #flip4, #panel5, #flip5, #panel6, #flip6, #panel7, #flip7, #panel8, #flip8, #panel9, #flip9, #panel10, #flip10, #panel11, #flip11, #panel12, #flip12{
+    padding: 5px;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+    font-size: 24px;
+  }
+  
+#panel, #panel2, #panel3, #panel4, #panel5, #panel6, #panel7, #panel8, #panel9, #panel10, #panel11, #panel12{
+    padding: 10px;
+    display: none;
+} */
+#click1{
+    border: none;
+    color: #c428a0;
+    text-decoration: underline;
+    background: none;
+}
+#click1:hover{
+    border: none;
+    color: #c428a0;
+    text-decoration: underline;
+    background: none;
+}
+#click2{
+    border: none;
+    background: none;
+}
+#click2:hover{
+    border: none;
+    color: #c428a0;
+    text-decoration: underline;
+    background: none;
+}

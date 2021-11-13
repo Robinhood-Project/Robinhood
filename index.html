@@ -12,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
@@ -120,7 +122,8 @@
                 <div class="col video" id="video">
                     <!-- ?autoplay=1&mute=1 ใส่หลังlink youtube เพื่อให้เล่นอัตโนมัต-->
                     <iframe class="col m-3" id="youtube" width="660" height="315"
-                        src="https://www.youtube.com/embed/Sjcdffzse_o" title="YouTube video player" frameborder="0"
+                        src="https://www.youtube.com/embed/Sjcdffzse_o?autoplay=1&mute=1" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
             </div>
@@ -134,15 +137,15 @@
                     <h1 class="txt_hihglight">Highlight Story</h1>
                 </div>
                 <div class="row">
-                    <a class="col nav-link mx-2" id="story1" href="#highlight">
+                    <a class="col nav-link mx-2" id="story1" href="restaurant-story-ร้านเขียง.html">
                         <div class="row" id="title"><b>"เขียง"ยกระดับอาหารตามสั่ง อร่อยถึงใจ</b></div>
                         <div class="row" id="img_highlight1"></div>
                     </a>
-                    <a class="col nav-link mx-2" id="story2" href="#highlight">
+                    <a class="col nav-link mx-2" id="story2" href="restaurant-story-ilovebobatea.html">
                         <div class="row" id="title"><b>มหกรรมชานมไข่มุก</b></div>
                         <div class="row" id="img_highlight2"></div>
                     </a>
-                    <a class="col nav-link mx-2" id="story3" href="#highlight">
+                    <a class="col nav-link mx-2" id="story3" href="restaurant-story-บางกะปิ-วังทองหลาง.html">
                         <div class="row" id="title"><b>บางกะปิ วังทองหลาง</b></div>
                         <div class="row" id="img_highlight3"></div>
                     </a>
@@ -215,7 +218,7 @@
             </div>
             <div class="row">
                 <div class="col-8">
-                    <a class="nav-link" href="#highlight">
+                    <a class="nav-link" href="restaurant-story-ไก่ทอดเจ๊กี.html">
                         <img class="row img-eat" src="./image/Thumbnail-Cover-1.jpg" alt="..." class="img-thumbnail">
                         <p class="row txt-8 font-weight-bold mt-2">50 ปีแห่งความอร่อย เจ๊กีโปโล
                             ไก่ทอดระดับตำนานกับหลากหลายเมนูอีสานสุดแซ่บ</p>
@@ -230,7 +233,7 @@
                 </div>
                 <div class="col-4 ">
                     <div class="row">
-                        <a class="nav-link" href="#highlight">
+                        <a class="nav-link" href="restaurant-story-สมบูรณ์โภชนา.html">
                             <img class="row img-eat-1" src="./image/สมบูรณ์โภชนา-Thumbnail-Cover.jpg" alt="..."
                                 class="img-thumbnail">
                             <p class="row txt-8 font-weight-bold mt-2">สมบูรณ์โภชนา
@@ -339,15 +342,16 @@
             <div class="row font-weight-bold my-4 mt-5">
                 <p class="text-center txt-12">เริ่มต้นสั่งอาหารกับ Robinhood</p>
             </div>
+            <br>
             <div class="row">
-                <div class="col-6">
-                    <img class="" src="./image/mobile_b1-choose.png" alt="..." style="width: 100%;">
+                <div class="col-5 mt-2">
+                    <img id="myimage" src="./image/mobile_b1-choose.png" alt="..." style="width: 100%;">
                 </div>
-                <div class="col-6">
+                <div class="col-6 ml-5">
                     <div class="row">
                         <div class="col-2">
-                            <button onclick="submitButtonStyle(this)" type="submit" class="button txt-circle">1</button>
-                            <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 35%;">
+                            <button onclick=one(); type="submit" class="button1 txt-circle">1</button>
+                            <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 32%;">
                         </div>
                         <div class="col">
                             <div class="row txt-13 font-weight-bold">เลือกจุดหมาย ที่จะรับอาหาร</div>
@@ -357,8 +361,8 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-2">
-                            <button onclick="submitButtonStyle(this)" type="submit" class="button txt-circle">2</button>
-                            <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 35%;">
+                            <button onclick=two(); type="submit" class="button2 txt-circle">2</button>
+                            <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 32%;">
                         </div>
                         <div class="col">
                             <div class="row txt-13 font-weight-bold">เลือกร้านอาหารโปรดของคุณ</div>
@@ -369,8 +373,8 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-2">
-                            <button onclick="submitButtonStyle(this)" type="submit" class="button txt-circle">3</button>
-                            <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 35%;">
+                            <button onclick="three()" type="submit" class="button3 txt-circle">3</button>
+                            <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 32%;">
                         </div>
                         <div class="col">
                             <div class="row txt-13 font-weight-bold">เลือกเมนูที่ถูกใจ</div>
@@ -381,8 +385,8 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-2">
-                            <button onclick="submitButtonStyle(this)" type="submit" class="button txt-circle">4</button>
-                            <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 35%;">
+                            <button onclick="four()" type="submit" class="button4 txt-circle">4</button>
+                            <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 32%;">
                         </div>
                         <div class="col">
                             <div class="row txt-13 font-weight-bold">เลือกช่องทางการชำระเงิน</div>
@@ -393,8 +397,8 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-2">
-                            <button onclick="submitButtonStyle(this)" type="submit" class="button txt-circle">5</button>
-                            <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 35%;">
+                            <button onclick="five()" type="submit" class="button5 txt-circle">5</button>
+                            <img class="row ml-2 mt-2" src="./image/Arrow-1.png" alt="..." style="width: 32%;">
                         </div>
                         <div class="col">
                             <div class="row txt-13 font-weight-bold">กดชำระเงิน</div>
@@ -405,7 +409,7 @@
                     </div>
                     <div class="row mt-3">
                         <div class="col-2">
-                            <button onclick="submitButtonStyle(this)" type="submit" class="button txt-circle">6</button>
+                            <button onclick="six()" type="submit" class="button6 txt-circle">6</button>
                         </div>
                         <div class="col">
                             <div class="row txt-13 font-weight-bold">ติดตามสถานะของอาหาร</div>
@@ -426,7 +430,7 @@
                 <a class="col-2 ml-2" id="google_play" href="#highlight">
                     <img src="./image/download_Google-Play.png" style="width:120px;">
                 </a>
-                
+
             </div>
             <br>
             <br>
@@ -436,17 +440,275 @@
         <div class="container mt-5">
             <div class="row text-center">
                 <div class="col txt-16">
-                    <h1 class="txt_hihglight"><img src="./image/Group-501.png" alt="..." style="width: 5%;"> ตอบทุกคำถามที่คุณสงสัย</h1>
+                    <h1 class="txt_hihglight"><img src="./image/Group-501.png" alt="..." style="width: 5%;">
+                        ตอบทุกคำถามที่คุณสงสัย</h1>
                 </div>
             </div>
             <div class="row">
-                <h3 class="text-center mt-2">คลายทุกข้อสงสัยในบริการของ  Robinhood  ให้เรารู้จักกันมากขึ้น <i class="fa fa-heart" style="font-size:25px;"></i></h3>
+                <h3 class="text-center mt-2">คลายทุกข้อสงสัยในบริการของ Robinhood ให้เรารู้จักกันมากขึ้น <i
+                        class="fa fa-heart" style="font-size:25px;"></i></h3>
             </div>
-            <div class="row">
-                <h2 class="ans1">Robinhood คืออะไร</h2>
+            <div class="row mt-5 justify-content-md-center" id="ans_div">
+                <div class="row ans1 mt-2" id="flip">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">Robinhood คืออะไร</a></div>
+                    <div class="col-1 mt-2" id="down1"><img class="" id="down1" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="row-12 ans2" id="panel">Robinhood คือ Food Delivery App สัญชาติไทย
+                    ซึ่งให้บริการโดยบริษัทเพอร์เพิล เวนเจอร์ส ในเครือ เอสซีบี เท็นเอกซ์ (SCB 10X)
+                    ซึ่งบริษัทภายใต้กลุ่มของธนาคารไทยพาณิชย์ เป็นอีกทางเลือกหนึ่งสำหรับผู้บริโภค
+                    ที่รวบรวมร้านอาหารอันหลากหลายที่ตอบโจทย์ความต้องการของลูกค้าอย่างครบครัน</div>
+
+                <div class="row ans1 mt-4" id="flip2">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">Robinhood
+                            ให้บริการเวลาใดบ้าง</a></div>
+                    <div class="col-1 mt-2" id="down2"><img class="" id="down2" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="ans2" id="panel2">Robinhood ให้บริการ 24 ชั่วโมงของทุกวัน
+                    ทั้งนี้ขึ้นอยู่กับวันและเวลาเปิด-ปิดของร้านอาหาร</div>
+
+                <div class="row ans1 mt-4" id="flip3">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">Robinhood
+                            ให้บริการในพื้นที่ใดบ้าง</a></div>
+                    <div class="col-1 mt-2" id="down3"><img class="" id="down3" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="ans2" id="panel3">Robinhood ให้บริการ
+
+                    <br>ทุกพื้นที่ใน กรุงเทพฯ สมุทรปราการ นนทบุรี รวมถึง ปทุมธานี
+                    <br>เฉพาะบางพื้นที่ในจังหวัดสมุทรสาคร (อำเภอเมืองและกระทุ่มแบน)
+                    <br>เฉพาะบางพื้นที่ในจังหวัดนครปฐม (อำเภอนครชัยศรี พุทธมณฑล และบางเลน)
+                    โดยจะพิจารณาขยายพื้นที่ในระยะต่อไป
+                </div>
+
+                <div class="row ans1 mt-4" id="flip4">
+                    <div class="col-11"><a class="ans_1 font-weight-bold ml-4">Robinhood
+                            คิดค่าบริการอะไรบ้าง</a></div>
+                    <div class="col-1 mt-2" id="down4"><img class="" id="down4" src="./image/Group-4-1.png" alt=""
+                            style="width: 50%;"></div>
+                </div>
+                <div class="ans2" id="panel4">1.ค่าอาหารตามจริงที่ร้านอาหารเป็นผู้กำหนด
+                    2.ค่าบริการขนส่งผ่านผู้ให้บริการ Skootar
+                    3.ค่าบริการอื่นๆ ในบางกรณี เช่น ค่าจอดรถ หรือค่ารอลูกค้านานเกิน 15 นาที
+                    ซึ่งทุกกรณีดังกล่าวจะมีการโทรเพื่อแจ้งกับลูกค้าก่อน และชำระเงินให้ Robinhood Platform
+                    ด้วยการสแกน PromptPay QR Code</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-4 container justify-content-md-center" id="button">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <button class="button col-6 ml-2 text-center" width="500" type="button" id="list" onclick="list()"
+                            data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            คำถามทั้งหมด<img class="col img-down" src="./image/back.png" alt=""
+                                style="width: 28%;"></button>
+                        <div class="col-3"></div>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+        <script>
+            function list() {
+                document.getElementById("list").style.display = "none";
+                document.getElementById("food_playlist").style.marginBottom = "-48px";
+            }
+        </script>
+        <div class="collapse" id="collapseExample">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="row ans1 mt-2" id="flip5">
+                        <div class="col-11"><a
+                                class="ans_1 font-weight-bold ml-4">หากไม่สามารถค้นหาที่อยู่จัดส่งได้ควรทำอย่างไร</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down5"><img class="" id="down5" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="row-12 ans2" id="panel5">กดเพื่อเลือกที่อยู่จัดส่งด้านบนสุดในหน้าแรก
+                        จากนั้นให้พิมพ์สถานที่ใกล้เคียง และขยับหมุดให้ตรงกับสถานที่ที่ต้องการจัดส่ง</div>
+
+                    <div class="row ans1 mt-4" id="flip6">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">ทำไมระยะทางใน Robinhood
+                                ถึงไม่ตรงกับในแอปฯ อื่นๆ</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down6"><img class="" id="down6" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel6">ที่หน้าร้านอาหาร Robinhood จะแสดงระยะทางโดยประมาณ แต่ก่อนชำระเงิน
+                        ระยะทางจะแสดงตาม Google Map และคำนวณค่าขนส่งตามจริง</div>
+
+                    <div class="row ans1 mt-4" id="flip7">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">สั่งอาหารให้คนอื่นได้หรือไม่</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down7"><img class="" id="down7" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel7">สามารถเลือกสถานที่จัดส่งที่ต้องการได้จาก
+                        ที่อยู่จัดส่งด้านบนสุดในหน้าแรก จากนั้นในหน้ายืนยันคำสั่งซื้อและชำระเงิน ให้คลิก ‘+
+                        เพิ่มรายละเอียดถึงคนขับ’ เพื่อระบุชื่อและเบอร์โทรศัพท์ผู้รับที่ต้องการ
+                    </div>
+
+                    <div class="row ans1 mt-4" id="flip8">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">ช่องทางการชำระเงินของ
+                                Robinhood มีอะไรบ้าง</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down8"><img class="" id="down8" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel8">1.ตัดบัญชีผ่านแอปพลิเคชัน SCB EASY
+                        2.ชำระด้วยบัตรเครดิต บัตรเดบิต หรือบัตรเติมเงิน ที่มีสัญลักษณ์ Visa, Master และ JCB</div>
+
+                    <div class="row ans1 mt-4" id="flip9">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">จะเพิ่มบัตรเครดิต
+                                บัตรเดบิตและบัตรเติมเงินได้อย่างไร</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down9"><img class="" id="down9" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="row-12 ans2" id="panel9">กดเมนูขวาบนที่หน้าแรก แล้วเลือก ‘วิธีการชำระเงิน’
+                        กดที่เครื่องหมาย ‘+’ เพื่อเพิ่มบัตร</div>
+
+
+                    <div class="row ans3 mt-4" id="flip10">
+                        <div class="col-11"><a
+                                class="ans_1 font-weight-bold ml-4">กรณีที่เพิ่มบัตรเครดิต/บัตรเดบิตหรือบัตรเติมเงินในครั้งแรก
+                                ทำไมถึงมีการตัดเงินก่อน แล้วจะได้รับเงินคืนหรือไม่</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down10"><img class="" id="down10" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel10">หลังจากกดเพิ่มบัตรเครดิต บัตรเดบิตและ/หรือบัตรเติมเงิน
+                        ระบบจะมีการหักเงินเพื่อตรวจสอบว่าบัตรที่เลือกใช้นั้นๆ
+                        สามารถใช้งานได้และมีวงเงินเพียงพอเพื่อทำการสั่งซื้อ
+                        หลังจากนั้นจะคืนเงินที่หักกลับเข้าบัตรอัตโนมัติ</div>
+
+                    <div class="row ans2 mt-4" id="flip11">
+                        <div class="col-11"><a
+                                class="ans_1 font-weight-bold ml-4">ประวัติคำสั่งซื้อจะแสดงย้อนหลังไปนานเท่าไหร่</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down11"><img class="" id="down11" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel11">ประวัติคำสั่งซื้อจะแสดงรายการย้อนหลังไป 1 เดือน
+
+                        กรณีไม่พบคนขับ หรือร้านอาหารไม่รับคำสั่งซื้อ รายการจะไม่แสดงในประวัติคำสั่งซื้อ
+                        หากรายการเหล่านี้มีการตัดเงินแล้ว ระบบจะคืนเงินเข้าบัญชีหรือบัตรโดยอัตโนมัติ
+                    </div>
+
+                    <div class="row ans3 mt-4" id="flip12">
+                        <div class="col-11"><a class="ans_1 font-weight-bold ml-4">หากมีปัญหาอื่นๆ
+                                ที่เกี่ยวกับคำสั่งซื้อ เช่น ร้านทำอาหารไม่ตรงตามที่สั่ง ติดต่อคนขับไม่ได้ และอื่นๆ
+                                จะติดต่อใครได้บ้าง</a>
+                        </div>
+                        <div class="col-1 mt-2" id="down12"><img class="" id="down12" src="./image/Group-4-1.png" alt=""
+                                style="width: 50%;"></div>
+                    </div>
+                    <div class="ans2" id="panel12">สามารถติดต่อ Call Center เพื่อประสานงานในกรณีที่เกิดข้อขัดข้องที่
+                        02-777-7564</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-top: -290px;">
+        <div class="row mt-5">
+            <div class="col-3"></div>
+            <div class="col-9 bg_aboutus"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <br>
+        <div class="container row">
+            <div class="row mt-5 ml-3">
+                <div class="col-3">
+                    <div class="row">
+                        <img class="" id="" src="./image/logo-White.png" alt="" style="width: 31%;">
+                    </div>
+                    <div class="row mt-3">
+                        <p class="text-warning">ติดตามเราช่องทางอื่นๆ</p>
+                    </div>
+                    <div class="row mt-3 ml-5">
+                        <img class="ml-5" id="" src="./image/facebook.png" alt="" style="width: 25%;">
+                    </div>
+                    <div class="row mt-4 ml">
+                        <p class="text-white" style="font-size: 13px;">Call Center : <a class="ml-1">02-777-7564</a></p>
+                        <p class="text-white" style="font-size: 13px;">เปิดให้บริการทุกวัน ตลอด 24 ชั่วโมง</p>
+                    </div>
+                    <div class="row mt-4">
+
+                    </div>
+                    <div class="row ml">
+                        <p class="text-white" style="font-size: 13px;">©Robinhood</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row mt-5">
+
+                    </div>
+                    <div class="row mt-1">
+                        <p class="text-warning">ข้อกำหนดการใช้งาน Robinhood</p>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-4" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการร้านอาหารโรบินฮู้ด</u></a>
+                    </div>
+                    <div class="row">
+                        <a class="text-white mt-3" style="font-size: 11px;"
+                            href=""><u>ข้อกำหนดและเงื่อนไขการใช้บริการสั่งอาหาร</u></a>
+                    </div>
+                    <div class="row">
+                        <p class="text-warning mt-5">ข้อกำหนดการใช้งานเว็บไซต์</p>
+                    </div>
+                    <div class="row ml">
+                        <a class="text-white" style="font-size: 12px;" href=""><u>Privacy policy</u></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="row mt-4">
+                        <a class="col-9 nav-link" href="merchant.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top " src="./image/rectangle.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">พาร์ทเนอร์ร้านอาหาร​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">มาเพิ่มยอดขายง่ายๆ
+                                        ให้ร้านอาหารของคุณ
+                                        สามารถสมัครร่วมเป็นร้านอาหารกับ Robinhood ได้แล้ววันนี้</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="col-2 nav-link" href="rider.html">
+                            <div class="card" style="width: 19rem;">
+                                <img class="card-img-top \" src="./image/Robinhood-Rider-Footer-box-edit.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="row txt-10 font-weight-bold" style="font-size: 14px;">โรบินฮู้ด ไรเดอร์​
+                                    </p>
+                                    <p class="row txt-11 font-weight-normal" style="font-size: 12px;">เช้ารับงาน
+                                        ค่ำรับเงิน ได้เต็มๆ ไม่ต้องสำรองเงินค่าอาหาร พร้อมรับสิทธิพิเศษมากมาย
+                                        สมัครได้แล้วเพียงโหลดแอป</p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+            </div>
+            <div class="row mt-5 text-center ml-5">
+                <p class="text-muted ml-4 my-4">Copyright © 2021 <a class="text-white" href="index.html">Robinhood.</a>
+                    All Rights Reserved. <a class="text-white" href="#">Privacy-th</a> | Catch Foodmania by <a
+                        class="text-white" href="https://catchthemes.com/">Catch Themes</a></p>
             </div>
         </div>
     </div>
 </body>
+<script>
+</script>
 
 </html>

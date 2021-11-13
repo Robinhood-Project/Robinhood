@@ -64,7 +64,10 @@ a:hover{
 }
 
 .highlight{
-    color: rgb(236, 22, 255);
+    font-weight: bold;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #txt-box1{
@@ -86,7 +89,7 @@ a:hover{
     border-radius: 10px;
 }
 
-#photo :hover{
+#photo1 :hover{
     /* filter:drop-shadow(8px 8px 10px gray); */
     filter:brightness(86%) grayscale(2%);
     transition: .4s;
@@ -123,11 +126,21 @@ a:hover{
     font-size: 20px;
 }
 
+.robin{
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient( 45deg, #c428a0, #8b4aae);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .photo3{
     width: 350px;
     border-radius: 10px;
 }
-
+.footer{
+    background-color: black;
+}
 /* #photo2{
     padding: 10px;
 } */

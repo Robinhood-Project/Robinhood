@@ -78,13 +78,17 @@
     line-height: 20pt;
 }
 .bg_aboutus{
-    width: 50%;
+    width: 80%;
     height: 320px;
+    
     background-image: url(./image/banner-หน้ารู้จักเรา.png);
     /* position: absolute; */
     z-index: -100;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     opacity: 0.4;
     filter: alpha(opacity=40);
+}
+.footer{
+    background-color: black;
 }

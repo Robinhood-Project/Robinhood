@@ -79,3 +79,11 @@ a:hover{
 .button{
     margin-top: 90px;
 }
+.seafood{
+    color: black;
+    border: solid 1px #dbdbdb;
+}
+.seafood:hover{
+    color: rgb(228, 173, 54);
+    text-decoration: none;
+}
